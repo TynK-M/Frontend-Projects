@@ -34,6 +34,8 @@ frontend-projects/
 │-- basic-html-css/
 │-- js-projects/
 │-- react-projects/
+│-- .gitignore
+│-- LICENSE
 │-- README.md
 ```
 
