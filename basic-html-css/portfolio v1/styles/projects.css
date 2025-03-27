@@ -1,0 +1,66 @@
+#project-section{
+    border: 1px solid #000000;
+    border-radius: 15px;
+    box-shadow: 2px 4px 4px 2px #000000;
+    transition: all 0.5s ease;
+}
+
+#project-section:hover{
+    box-shadow: none;
+}
+
+.header-projects{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000000;
+}
+
+#introduction-p{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    gap: 5px;
+}
+
+.github{
+    color: #DDDDDD;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.github:hover{
+    color: hsl(0, 0%, 100%);
+}
+
+#projects{
+    margin: 15px auto;
+    width: 90%;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+#projects tr,
+#projects th,
+#projects td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+#projects th:first-child {
+    border-top-left-radius: 15px;
+}
+
+#projects th:last-child {
+    border-top-right-radius: 15px;
+}
+
+#projects tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+
+#projects tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+}

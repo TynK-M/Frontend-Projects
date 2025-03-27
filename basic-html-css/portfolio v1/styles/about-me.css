@@ -1,0 +1,31 @@
+.header-about-me{
+    display: flex;
+    justify-content: center;
+}
+
+.text-about-me{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.img-about-me{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+.credits-img{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.credits-img > a{
+    color: #DDDDDD;
+    text-decoration: inherit;
+}
+
+.credits-img > a:hover{
+    color: hsl(0, 0%, 100%);
+}
