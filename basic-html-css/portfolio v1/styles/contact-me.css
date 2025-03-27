@@ -1,0 +1,20 @@
+.contact-p{
+    display: flex;
+    justify-content: center;
+}
+
+#social-list{
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.social-list-item{
+    padding: 15px;
+}
+
+.social-icons{
+    width: 20px;
+}
