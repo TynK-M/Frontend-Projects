@@ -16,8 +16,8 @@ body{
     border-radius: 8px;
     border: 2px solid #000000;
     padding: 20px;
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 600px;
     box-shadow: 10px 10px 4px 1px #000000;
     transition: all 0.3s ease;
 }
@@ -26,17 +26,36 @@ body{
     box-shadow: none;
 }
 
+/*Guesses rows and columns*/
+.answer-try{ /*Rows*/
+    display: flex;
+    margin: 15px 15px 0 15px;
+    justify-content: space-between;
+}
+
+.letter-try{
+    width: 65px;
+    height: 65px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+/*Bottom textarea and submit button styling*/
 #answer {
     position: absolute;
     bottom: 10px;
-    width: 100%;
+    width: inherit;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #answer textarea {
-    width: 80%;
+    width: 200px;
     height: 40px;
     resize: none;
     border-radius: 5px;
@@ -57,4 +76,11 @@ body{
 
 #answer-submit:hover {
     background-color: #0056b3;
+}
+
+#error-message {
+    color: red;
+    display: none; 
+    font-size: 14px;
+    margin-top: 5px;
 }
