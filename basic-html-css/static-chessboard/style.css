@@ -1,0 +1,81 @@
+html,
+body {
+    background-color: #2e2e2e;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    position: absolute;
+    color: hsl(0, 0%, 84%);
+    top: -15px;
+}
+
+/*Creating the chessboard grid*/
+#chessboard{
+    background-color: rgb(75, 61, 17);
+    width: 640px;
+    height: 640px;
+    border: 1px solid #000000;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+/*Coloring the squares*/
+.square {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.white-square{
+    background-color: #F0D9B5;
+}
+.black-square{
+    background-color: #B58863;
+}
+/*Adjusting the piece dimension*/
+.square img {
+    width: 68px;
+    height: 68px;
+}
+/*Adjusting the notation a-h for the rows*/
+.column{
+    position: absolute;
+    bottom: -10px;
+    left: 5px;
+    font-size: 14px;
+}
+
+.white-square .column{
+    color: #B58863;
+}
+
+.black-square .column{
+    color: #F0D9B5;
+}
+/*Adjusting the notation 1-8 for the rows*/
+.row{
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    font-size: 14px;
+}
+
+.white-square .row{
+    color: #B58863;
+}
+
+.black-square .row{
+    color: #F0D9B5;
+}
