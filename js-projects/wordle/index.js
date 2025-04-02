@@ -95,6 +95,7 @@ async function insertInput() {
     rowCounter++;
 
     inputField.value = "";
+    inputField.focus();
     // Checks if the rows are all full ===true===> disable the textarea and submit button
     if (rowCounter > 6) {
         inputField.disabled = true;
@@ -107,3 +108,9 @@ async function insertInput() {
         sendButton.disabled = true;
     }
 }
+
+document.addEventListener("keydown", function(event){
+    if(event.key === "Enter"){
+        insertInput();
+    }
+});
